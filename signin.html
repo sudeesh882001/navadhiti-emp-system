@@ -11,6 +11,35 @@
   <link rel="stylesheet" href="styles/base.css" />
 
   <style>
+      /* Navbar visible only on mobile */
+.navbar {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* Tree image (right-panel) visible only on desktop */
+/* By default, hide the tree image (for mobile) */
+.right-panel {
+  display: none !important;
+}
+
+/* On desktop, show the tree image */
+@media (min-width: 768px) {
+  .right-panel {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+
     body, html {
       margin: 0;
       padding: 0;
